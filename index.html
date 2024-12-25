@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Blog Preview Card</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @font-face {
+        font-family: "Figtree";
+        src: url("assets/fonts/Figtree-VariableFont_wght.ttf")
+          format("truetype");
+      }
+      body {
+        font-family: "Figtree", sans-serif;
+      }
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body
+    class="bg-[hsl(47,88%,63%)] flex items-center justify-center min-h-screen"
+  >
+    <!-- Card -->
+    <div class="bg-white max-w-xs sm:max-w-sm w-full p-6 rounded-2xl border border-black" style="box-shadow: 10px 10px rgba(0, 0, 0);">
+      <!-- Top Image -->
+      <img
+        src="assets/images/illustration-article.svg"
+        alt="Blog Preview"
+        class="rounded-lg mb-4"
+      />
+
+      <!-- Title -->
+      <div
+        class="bg-[hsl(47,88%,63%)] w-max font-extrabold py-1 px-4 rounded-md mb-4"
+      >
+        Learning
+      </div>
+
+      <!-- Date -->
+      <p class="text-[hsl(0,0%,7%)] text-sm my-4">Published 21 Dec 2023</p>
+
+      <!-- Article Title -->
+      <h2 class="text-[hsl(0,0%,7%)] font-extrabold text-2xl mb-2 hover:text-[hsl(47,88%,63%)] hover:cursor-pointer">
+        HTML & CSS foundations
+      </h2>
+
+      <!-- Description -->
+      <p class="text-[hsl(0,0%,42%)] text-sm my-4">
+        These languages are the backbone of every website, defining structure,
+        content, and presentation.
+      </p>
+
+      <!-- Profile -->
+      <div class="flex items-center mt-4">
+        <img
+          src="assets/images/image-avatar.webp"
+          alt="Greg Hooper"
+          class="w-10 h-10 rounded-full mr-4"
+        />
+        <p class="text-[hsl(0,0%,7%)] font-extrabold">Greg Hooper</p>
+      </div>
+    </div>
+
+    <!-- Attribution -->
+    <div class="absolute bottom-4 text-center text-gray-600 text-sm">
+      Challenge by
+      <a
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
+        class="text-[hsl(228,45%,44%)] hover:underline"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="#" class="text-[hsl(228,45%,44%)] hover:underline">Yash Kamble</a
+      >.
+    </div>
+  </body>
+</html>
